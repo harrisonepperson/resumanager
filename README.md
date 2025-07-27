@@ -1,6 +1,6 @@
-[Configuration Example](./docs/resume_picture_configure.png)
+![Configuration Example](./docs/resume_picture_configure.png "Configuration example of my actual resume in Resumanager editor")
 
-[Output Example](./docs/resume_picture_output.png)
+![Output Example](./docs/resume_picture_output.png "Output example of my actual resume configured using Resumanager")
 
 # Resumanager
 
