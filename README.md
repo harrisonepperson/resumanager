@@ -1,6 +1,6 @@
-[Configuration Example](./docs/resume_picture_configure.png)
+![Configuration Example](./docs/resume_picture_configure.png "Configuration example of my actual resume in Resumanager editor")
 
-[Output Example](./docs/resume_picture_output.png)
+![Output Example](./docs/resume_picture_output.png "Output example of my actual resume configured using Resumanager")
 
 # Resumanager
 
@@ -42,4 +42,4 @@ Beyond the basic usage, there are a few tips to getting the most out this projec
 ## Examples
 
 - An example template is located at [docs/example_template.resume](./docs/example_template.resume) with the example output at [docs/Example_Resume.pdf](./docs/Example_Resume.pdf)
-  - That's my actual resume, and I'm looking for a job, so if you like what you see in my resume or project, why not [reach out](me@harrisonepperson.com)?
+  - That's my actual resume, and I'm looking for a job, so if you like what you see in my resume or project, why not [reach out](mailto:me@harrisonepperson.com)?
