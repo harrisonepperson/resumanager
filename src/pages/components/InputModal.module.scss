@@ -1,0 +1,12 @@
+.modal {
+  @media print {
+    display: none;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 0.5rem !important;
+  }
+}

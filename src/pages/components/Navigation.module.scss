@@ -1,0 +1,38 @@
+.nav {
+  @media print {
+    display: none;
+  }
+
+  background-color: #444;
+  border-radius: var(--gap);
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  box-shadow: 0 0 13px black, 0 0 8px black, 0 0 5px black, 0 0 3px black;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  svg {
+    background-color: #222;
+    border-radius: 0.5rem;
+    color: rgb(201 201 201);
+    cursor: pointer;
+    padding: 0.5rem;
+    position: relative;
+    transition: background-color 0.2s ease, color 0.2s ease,
+      box-shadow 0.2s ease;
+
+    &.active,
+    &:hover {
+      background-color: rgb(94 199 248);
+      box-shadow: 0 0 8px black;
+      color: #222;
+    }
+  }
+}

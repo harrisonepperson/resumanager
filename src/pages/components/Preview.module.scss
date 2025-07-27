@@ -1,0 +1,63 @@
+@mixin layout {
+  h1 {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+
+  br {
+    content: '';
+    display: block;
+  }
+
+  ul {
+    padding-left: 2em;
+  }
+}
+
+.version-stamp {
+  display: none;
+
+  @media print {
+    display: initial;
+    -webkit-print-color-adjust:exact !important;
+    print-color-adjust:exact !important;
+
+    color: white;
+    position: fixed;
+    bottom: .5rem;
+    right: .5rem;
+
+    font-size: .1rem;
+    z-index: -999;
+  }
+}
+
+.paper {
+  background-color: white;
+  border: solid 1px black;
+  border-radius: 6px;
+  box-shadow: 0 0 21px black, 0 0 5px black;
+  box-sizing: border-box;
+  height: 11in;
+  max-height: 11in;
+  max-width: 8.5in;
+  min-height: 11in;
+  min-width: 8.5in;
+  padding: 0.5in;
+  width: 8.5in;
+
+  @include layout;
+
+  @media print {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.stub {
+  @include layout;
+}

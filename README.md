@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+[Configuration Example](./docs/resume_picture_configure.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Output Example](./docs/resume_picture_output.png)
 
-## Available Scripts
+# Resumanager
 
-In the project directory, you can run:
+A browser based applications for streamlining updating your resume for different applications.  Rather than using an identical resume for multiple job applications you can easily tailor your resume to highlight areas where your skills and experience match with the job description.
 
-### `npm start`
+## Running the app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+$ npm i
+$ npm run start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Side by side view with live updates to your resume
+- Drag and drop editor to easily reorganize your top level sections and individual accolades
+- Mark down editing for inline styling
+- Layout and font customizations
+- Toggleable visibility to retain the information in your master copy but hide it in your resume
+- Import and Export to save your master copy locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Use
 
-### `npm run build`
+- If you are returning, import your saved `.resume` file on the "Import" tab otherwise ...
+- On the "Editor" tab "Add a section"
+  - Click the pencil icon to edit the section title and description
+  - Click the plus icon to add a bullet point for the section
+- Repeat adding sections and accolades
+- On the "Format" tab adjust as desired
+- On the "Export" tab save your config as a `.resume` file somewhere you'll remember for later
+- To access your compiled resume, print the webpage
+  - You can choose to print directly to a physical printer or save to a PDF
+  - Please note: Some configurations can cause an empty page to be appended to the end of the print.  You can restrict the number of pages that are printed in the browser/system dialog
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting the most of it
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Beyond the basic usage, there are a few tips to getting the most out this project.  First and foremost save your work!  There is no persistent state, no server, and no writing to local storage.  If you want to work on your resume across multiple sessions, you **must** export your config.  This tool is best used to tune *down* a resume rather than building one from the ground up.  This leads to two further insights: 1) draft your resume in an external editor like [**Libre**Office](https://www.libreoffice.org/) first then copy the information over and 2) build out a full resume with all your sections, experiences, and accolades first then use the features of Resumanager to hide or reorganize as appropriate to tailor your resume to a job description.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Examples
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- An example template is located at [docs/example_template.resume](./docs/example_template.resume) with the example output at [docs/Example_Resume.pdf](./docs/Example_Resume.pdf)
+  - That's my actual resume, and I'm looking for a job, so if you like what you see in my resume or project, why not [reach out](me@harrisonepperson.com)?

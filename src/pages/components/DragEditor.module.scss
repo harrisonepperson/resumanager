@@ -1,0 +1,114 @@
+.drag-editor {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.preview {
+  background-color: lightblue;
+  border: 2px solid blue;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 8px blue;
+  display: block;
+  max-height: 4rem;
+  min-height: 4rem;
+  width: 100%;
+}
+
+.card {
+  background-color: rgb(201 201 201);
+  border: solid 1px black;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px 0 black;
+  padding: 0.5rem;
+  transition: box-shadow 0.1s ease;
+
+  &.hidden {
+    border: 3px dotted;
+    filter: brightness(80%);
+    padding: calc(0.5rem - 2px);
+  }
+
+  .header {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+
+    .drag-handle {
+      cursor: move;
+      flex: 0 0 auto;
+    }
+
+    .body {
+      flex: 1 1 auto;
+    }
+
+    .controls {
+      flex: 0 0 auto;
+
+      svg {
+        border-radius: 999rem;
+        padding: 0.5rem;
+
+        &:hover {
+          background-color: grey;
+        }
+      }
+    }
+  }
+
+  .preview {
+    min-height: 3rem;
+  }
+
+  .accolades {
+    border-top: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.25rem;
+    padding-left: 1rem;
+    padding-top: 0.25rem;
+
+    .accolade {
+      align-items: center;
+      background-color: rgb(201 201 201);
+      border-radius: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+      padding-block: 0.25rem;
+
+      &.hidden {
+        filter: brightness(80%);
+        outline: dotted 3px black;
+      }
+
+      .drag-handle {
+        cursor: move;
+        flex: 0 0 auto;
+      }
+
+      .body {
+        flex: 1 1 auto;
+      }
+
+      .controls {
+        flex: 0 0 auto;
+
+        svg {
+          border-radius: 999rem;
+          padding: 0.5rem;
+
+          &:hover {
+            background-color: grey;
+          }
+        }
+      }
+
+      &:hover {
+        filter: brightness(80%);
+      }
+    }
+  }
+}
